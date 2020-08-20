@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace smdq.model
 {
+    /// <summary>
+    /// 返回结果
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class Res<T>
     {
         public int code { get; set; }
