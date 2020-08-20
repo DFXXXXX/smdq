@@ -12,14 +12,14 @@ namespace smdq.model
     /// <typeparam name="T"></typeparam>
     public class Res<T>
     {
-        public int code { get; set; }
+        public int Code { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public string msg { get; set; }
+        public string Msg { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public T result { get; set; }
+        public T Result { get; set; }
     }
 }

@@ -11,59 +11,59 @@ namespace smdq.model
         /// <summary>
         /// 
         /// </summary>
-        public int perid { get; set; }
+        public int Perid { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public string pername { get; set; }
+        public string Pername { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public string pertel { get; set; }
+        public string Pertel { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public string perphoto { get; set; }
+        public string Perphoto { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int perlv { get; set; }
+        public int Perlv { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public DateTime entrytime { get; set; }
+        public DateTime Entrytime { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public string adr { get; set; }
+        public string Adr { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public string pwd { get; set; }
+        public string Pwd { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int authorization1 { get; set; }
+        public int Authorization1 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int authorization2 { get; set; }
+        public int Authorization2 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int authorization3 { get; set; }
+        public int Authorization3 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int authorization4 { get; set; }
+        public int Authorization4 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int authorization5 { get; set; }
+        public int Authorization5 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int flag { get; set; }
+        public int Flag { get; set; }
     }  
 }
 

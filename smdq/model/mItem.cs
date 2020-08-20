@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace smdq.model
 {
-    public class mItem
+    public class MItem
     {
 
     }
