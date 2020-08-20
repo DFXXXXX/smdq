@@ -36,19 +36,19 @@ namespace smdq.WinForm.ITEM
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            WebProxy proxyObject = new WebProxy("106.56.201.251", 27833);
-            string URL = "http://www.cltlkj.cn:8090/api/getip";
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(URL);
-            req.Proxy = proxyObject; //设置代理 
-            req.Method = "GET";
-            string line = "";
-            using (WebResponse wr = req.GetResponse())
-            {
-                Stream strm = wr.GetResponseStream();
-                StreamReader sr = new StreamReader(strm);
-                line = sr.ReadToEnd();               
-            }
-            MessageBox.Show(line);
+            //WebProxy proxyObject = new WebProxy("106.56.201.251", 27833);
+            //string URL = "http://www.cltlkj.cn:8090/api/getip";
+            //HttpWebRequest req = (HttpWebRequest)WebRequest.Create(URL);
+            //req.Proxy = proxyObject; //设置代理 
+            //req.Method = "GET";
+            //string line = "";
+            //using (WebResponse wr = req.GetResponse())
+            //{
+            //    Stream strm = wr.GetResponseStream();
+            //    StreamReader sr = new StreamReader(strm);
+            //    line = sr.ReadToEnd();               
+            //}
+            //MessageBox.Show(line);
         }
     }
 }
