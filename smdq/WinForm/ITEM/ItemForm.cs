@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,33 +36,19 @@ namespace smdq.WinForm.ITEM
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            listView1.Items.Clear();
-            string url = $"http://218.106.157.204:8090/api/user/GetUserbyString?str={textBox1.Text}";
-
-            var sjson = WebServer.GetMeth(url);
-            //List<Cust> twoList = WebServer.GetResult<List<Cust>>(sjson);
-            //foreach (Cust stu in twoList)
-            //{
-            //    ListViewItem item1 = new ListViewItem();
-            //    item1.Text = stu.CustId.ToString();
-            //    item1.SubItems.Add(stu.CustName);
-            //    if (stu.CustType == 1)
-            //    {
-            //        item1.SubItems.Add("同行客户");
-            //    }
-            //    else
-            //    {
-            //        item1.SubItems.Add("到店客户");
-            //    }
-
-            //    item1.SubItems.Add(stu.CustTel);
-            //    item1.SubItems.Add(stu.CustAdr);
-            //    item1.SubItems.Add(stu.CustLv.ToString());
-            //    item1.SubItems.Add(stu.CustAmount.ToString());
-            //    item1.SubItems.Add(stu.CustRem);
-            //    listView1.Items.Add(item1);                   //添加集体进去
-            //}
-            return;
+            WebProxy proxyObject = new WebProxy("106.56.201.251", 27833);
+            string URL = "http://www.cltlkj.cn:8090/api/getip";
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create(URL);
+            req.Proxy = proxyObject; //设置代理 
+            req.Method = "GET";
+            string line = "";
+            using (WebResponse wr = req.GetResponse())
+            {
+                Stream strm = wr.GetResponseStream();
+                StreamReader sr = new StreamReader(strm);
+                line = sr.ReadToEnd();               
+            }
+            MessageBox.Show(line);
         }
     }
 }
