@@ -39,23 +39,23 @@ namespace smdq.WinForm.USER
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             if (_Mytpe == 0)
             {
                 var us = new User
                 {
-                    pername = t_Name.Text,
-                    pertel = t_tel.Text,
-                    adr = t_adr.Text,
-                    pwd = t_pwd.Text,
-                    entrytime = Convert.ToDateTime(t_time.Text),
-                    flag = Convert.ToInt32(checkBox6.Checked),
-                    authorization1 = Convert.ToInt32(checkBox1.Checked),
-                    authorization2 = Convert.ToInt32(checkBox2.Checked),
-                    authorization3 = Convert.ToInt32(checkBox3.Checked),
-                    authorization4 = Convert.ToInt32(checkBox4.Checked),
-                    authorization5 = Convert.ToInt32(checkBox5.Checked)
+                    Pername = t_Name.Text,
+                    Pertel = t_tel.Text,
+                    Adr = t_adr.Text,
+                    Pwd = t_pwd.Text,
+                    Entrytime = Convert.ToDateTime(t_time.Text),
+                    Flag = Convert.ToInt32(checkBox6.Checked),
+                    Authorization1 = Convert.ToInt32(checkBox1.Checked),
+                    Authorization2 = Convert.ToInt32(checkBox2.Checked),
+                    Authorization3 = Convert.ToInt32(checkBox3.Checked),
+                    Authorization4 = Convert.ToInt32(checkBox4.Checked),
+                    Authorization5 = Convert.ToInt32(checkBox5.Checked)
                 };
                 string jsonData = JsonConvert.SerializeObject(us);
                 var url = "http://www.cltlkj.cn:8090/api/User/CreateUser";
@@ -65,18 +65,18 @@ namespace smdq.WinForm.USER
             {
                 var us = new User
                 {
-                    perid= Convert.ToInt32(t_ID.Text),
-                    pername = t_Name.Text,
-                    pertel = t_tel.Text,
-                    adr = t_adr.Text,
-                    pwd = t_pwd.Text,
-                    entrytime = Convert.ToDateTime(t_time.Text),
-                    flag = Convert.ToInt32(checkBox6.Checked),
-                    authorization1 = Convert.ToInt32(checkBox1.Checked),
-                    authorization2 = Convert.ToInt32(checkBox2.Checked),
-                    authorization3 = Convert.ToInt32(checkBox3.Checked),
-                    authorization4 = Convert.ToInt32(checkBox4.Checked),
-                    authorization5 = Convert.ToInt32(checkBox5.Checked)
+                    Perid= Convert.ToInt32(t_ID.Text),
+                    Pername = t_Name.Text,
+                    Pertel = t_tel.Text,
+                    Adr = t_adr.Text,
+                    Pwd = t_pwd.Text,
+                    Entrytime = Convert.ToDateTime(t_time.Text),
+                    Flag = Convert.ToInt32(checkBox6.Checked),
+                    Authorization1 = Convert.ToInt32(checkBox1.Checked),
+                    Authorization2 = Convert.ToInt32(checkBox2.Checked),
+                    Authorization3 = Convert.ToInt32(checkBox3.Checked),
+                    Authorization4 = Convert.ToInt32(checkBox4.Checked),
+                    Authorization5 = Convert.ToInt32(checkBox5.Checked)
                 };
                 string jsonData = JsonConvert.SerializeObject(us);
                 var url = "http://www.cltlkj.cn:8090/api/User/UpdateUser";
@@ -84,92 +84,92 @@ namespace smdq.WinForm.USER
             }
         }
 
-        private void t_Name_TextChanged(object sender, EventArgs e)
+        private void Name_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void t_pwd_TextChanged(object sender, EventArgs e)
+        private void Pwd_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void t_tel_TextChanged(object sender, EventArgs e)
+        private void Tel_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void Label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void t_adr_TextChanged(object sender, EventArgs e)
+        private void Adr_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void Label4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void Label5_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void t_ID_TextChanged(object sender, EventArgs e)
+        private void ID_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void Label6_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void t_time_ValueChanged(object sender, EventArgs e)
+        private void Time_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox3_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox4_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox5_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox6_CheckedChanged(object sender, EventArgs e)
         {
 
         }

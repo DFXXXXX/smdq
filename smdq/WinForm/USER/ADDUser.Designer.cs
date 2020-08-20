@@ -57,7 +57,7 @@
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "姓名";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // t_Name
             // 
@@ -65,7 +65,7 @@
             this.t_Name.Name = "t_Name";
             this.t_Name.Size = new System.Drawing.Size(152, 21);
             this.t_Name.TabIndex = 1;
-            this.t_Name.TextChanged += new System.EventHandler(this.t_Name_TextChanged);
+            this.t_Name.TextChanged += new System.EventHandler(this.Name_TextChanged);
             // 
             // t_pwd
             // 
@@ -74,7 +74,7 @@
             this.t_pwd.PasswordChar = '*';
             this.t_pwd.Size = new System.Drawing.Size(152, 21);
             this.t_pwd.TabIndex = 3;
-            this.t_pwd.TextChanged += new System.EventHandler(this.t_pwd_TextChanged);
+            this.t_pwd.TextChanged += new System.EventHandler(this.Pwd_TextChanged);
             // 
             // label2
             // 
@@ -84,7 +84,7 @@
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 2;
             this.label2.Text = "密码";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // t_tel
             // 
@@ -92,7 +92,7 @@
             this.t_tel.Name = "t_tel";
             this.t_tel.Size = new System.Drawing.Size(152, 21);
             this.t_tel.TabIndex = 5;
-            this.t_tel.TextChanged += new System.EventHandler(this.t_tel_TextChanged);
+            this.t_tel.TextChanged += new System.EventHandler(this.Tel_TextChanged);
             // 
             // label3
             // 
@@ -102,7 +102,7 @@
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 4;
             this.label3.Text = "电话";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // t_adr
             // 
@@ -110,7 +110,7 @@
             this.t_adr.Name = "t_adr";
             this.t_adr.Size = new System.Drawing.Size(152, 21);
             this.t_adr.TabIndex = 7;
-            this.t_adr.TextChanged += new System.EventHandler(this.t_adr_TextChanged);
+            this.t_adr.TextChanged += new System.EventHandler(this.Adr_TextChanged);
             // 
             // label4
             // 
@@ -120,7 +120,7 @@
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 6;
             this.label4.Text = "地址";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // label5
             // 
@@ -130,7 +130,7 @@
             this.label5.Size = new System.Drawing.Size(53, 12);
             this.label5.TabIndex = 8;
             this.label5.Text = "入职时间";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // button1
             // 
@@ -141,7 +141,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "新增";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // t_ID
             // 
@@ -149,7 +149,7 @@
             this.t_ID.Name = "t_ID";
             this.t_ID.Size = new System.Drawing.Size(152, 21);
             this.t_ID.TabIndex = 12;
-            this.t_ID.TextChanged += new System.EventHandler(this.t_ID_TextChanged);
+            this.t_ID.TextChanged += new System.EventHandler(this.ID_TextChanged);
             // 
             // label6
             // 
@@ -159,7 +159,7 @@
             this.label6.Size = new System.Drawing.Size(29, 12);
             this.label6.TabIndex = 11;
             this.label6.Text = "编号";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // t_time
             // 
@@ -168,7 +168,7 @@
             this.t_time.Name = "t_time";
             this.t_time.Size = new System.Drawing.Size(152, 21);
             this.t_time.TabIndex = 13;
-            this.t_time.ValueChanged += new System.EventHandler(this.t_time_ValueChanged);
+            this.t_time.ValueChanged += new System.EventHandler(this.Time_ValueChanged);
             // 
             // checkBox1
             // 
@@ -179,7 +179,7 @@
             this.checkBox1.TabIndex = 14;
             this.checkBox1.Text = "权限1";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -190,7 +190,7 @@
             this.checkBox2.TabIndex = 15;
             this.checkBox2.Text = "权限2";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox2_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -201,7 +201,7 @@
             this.checkBox3.TabIndex = 16;
             this.checkBox3.Text = "权限3";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.CheckBox3_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -212,7 +212,7 @@
             this.checkBox4.TabIndex = 17;
             this.checkBox4.Text = "权限4";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.CheckBox4_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -223,7 +223,7 @@
             this.checkBox5.TabIndex = 18;
             this.checkBox5.Text = "权限5";
             this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.CheckBox5_CheckedChanged);
             // 
             // checkBox6
             // 
@@ -234,7 +234,7 @@
             this.checkBox6.TabIndex = 19;
             this.checkBox6.Text = "启用";
             this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.CheckBox6_CheckedChanged);
             // 
             // ADDUser
             // 

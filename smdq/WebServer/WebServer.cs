@@ -30,7 +30,7 @@ namespace smdq.webServer
         public static T GetResult<T>(string json)
         {
             Res<T> res = JsonConvert.DeserializeObject<Res<T>>(json);            
-            return res.result;
+            return res.Result;
         }
 
 
@@ -52,7 +52,7 @@ namespace smdq.webServer
             response = (System.Net.HttpWebResponse)request.GetResponse();
             System.IO.Stream s;
             s = response.GetResponseStream();
-            string StrDate = "";
+            string StrDate ;
             string strValue = "";
             StreamReader Reader = new StreamReader(s, Encoding.UTF8);
             while ((StrDate = Reader.ReadLine()) != null)

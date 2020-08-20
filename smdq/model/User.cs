@@ -8,6 +8,8 @@ namespace smdq.model
 {
     public class User
     {
+  
+
         /// <summary>
         /// 
         /// </summary>

@@ -22,7 +22,7 @@ namespace smdq.WinForm.USER
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             listView1.Items.Clear();
             string url = PublicValue.MyURL+ $"user/GetUserbyString?str={textBox1.Text}";
@@ -31,24 +31,24 @@ namespace smdq.WinForm.USER
             foreach (User stu in twoList)
             {
                 ListViewItem item1 = new ListViewItem();
-                item1.Text = stu.perid.ToString();
-                item1.SubItems.Add(stu.pername);
-                item1.SubItems.Add(stu.pertel);
-                item1.SubItems.Add(stu.adr);
-                item1.SubItems.Add(stu.perlv.ToString());
-                item1.SubItems.Add(stu.entrytime.ToString());
-                item1.SubItems.Add(stu.flag.ToString());
-                item1.SubItems.Add(stu.authorization1.ToString());
-                item1.SubItems.Add(stu.authorization2.ToString());
-                item1.SubItems.Add(stu.authorization3.ToString());
-                item1.SubItems.Add(stu.authorization4.ToString());
-                item1.SubItems.Add(stu.authorization5.ToString());
+                item1.Text = stu.Perid.ToString();
+                item1.SubItems.Add(stu.Pername);
+                item1.SubItems.Add(stu.Pertel);
+                item1.SubItems.Add(stu.Adr);
+                item1.SubItems.Add(stu.Perlv.ToString());
+                item1.SubItems.Add(stu.Entrytime.ToString());
+                item1.SubItems.Add(stu.Flag.ToString());
+                item1.SubItems.Add(stu.Authorization1.ToString());
+                item1.SubItems.Add(stu.Authorization2.ToString());
+                item1.SubItems.Add(stu.Authorization3.ToString());
+                item1.SubItems.Add(stu.Authorization4.ToString());
+                item1.SubItems.Add(stu.Authorization5.ToString());
                 listView1.Items.Add(item1);                   //添加集体进去
             }
             return;          
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             ADDUser new_form = new ADDUser();
             new_form.Owner = this;
@@ -56,11 +56,11 @@ namespace smdq.WinForm.USER
             new_form.ShowDialog();
             if (new_form.DialogResult == DialogResult.OK)
             {
-                button1_Click(sender, e);
+                Button1_Click(sender, e);
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count == 0)
                 return;
@@ -82,11 +82,11 @@ namespace smdq.WinForm.USER
             new_form.ShowDialog();
             if (new_form.DialogResult == DialogResult.OK)
             {
-                button1_Click(sender, e);
+                Button1_Click(sender, e);
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count == 0)
                 return;
@@ -94,7 +94,7 @@ namespace smdq.WinForm.USER
             var url = "http://218.106.157.204:8090/api/user/DelUserbyId?id="+id;
            // MessageBox.Show(url);
             id=WebServer.GetMeth(url);
-            button1_Click(sender, e);
+            Button1_Click(sender, e);
         }
     }
 }
